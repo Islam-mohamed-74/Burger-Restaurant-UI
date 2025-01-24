@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--~~~~~~~~~~~~~~~ Favicon ~~~~~~~~~~~~~~~-->
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <!--~~~~~~~~~~~~~~~ Font Awesome ~~~~~~~~~~~~~~~-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--~~~~~~~~~~~~~~~ Remix Icon ~~~~~~~~~~~~~~~-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!--  Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!--~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~-->
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+  <body class="font-oswald bg-blackColor capitalize">
+    <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
+    <header
+      class="capitalize text-whiteColor bg-blackColor top-0 fixed z-50 w-full"
+    >
+      <nav
+        class="container my-4 flex items-center justify-between relative md:text-3xl max-md:mt-1 max-md:border-b border-secondaryColor"
+      >
+        <div class="max-md:mx-3 md:text-3xl tracking-wider">
+          <h2 class="uppercase">
+            bur<span class="text-secondaryColor">ger</span>
+          </h2>
+        </div>
+        <div class="flex gap-4 text-2xl group">
+          <div
+            class="nav-bar max-md:group-hover:h-60 max-md:h-0 max-md:overflow-hidden font-dmsans max-md:bg-blackColor max-md:z-10 max-md:absolute max-md:w-lvw max-md:left-0 transition-all duration-700"
+          >
+            <ul
+              class="flex flex-row gap-4 max-md:flex-col max-md:translate-x-[50%] max-md:my-2 max-md:text-sm"
+            >
+              <li>
+                <a
+                  class="hover:text-secondaryColor ease-in duration-300"
+                  href="#home"
+                  >home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-secondaryColor ease-in duration-300"
+                  href="#about-us"
+                  >about us</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-secondaryColor ease-in duration-300"
+                  href="#menu"
+                  >menu</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-secondaryColor ease-in duration-300"
+                  href="#review"
+                  >review</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-secondaryColor ease-in duration-300"
+                  href="#contact"
+                  >contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="icon flex items-center">
+            <a class="" href=""><i class="ri-moon-line"></i></a>
+            <a class="menu-bar md:hidden mx-3 :" href=""
+              ><i class="ri-menu-2-line"></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~-->
+    <div
+      id="home"
+      class="container pt-20 flex items-center text-whiteColor max-md:flex-col max-md:justify-center max-md:text-center"
+    >
+      <div class="max-md:flex max-md:items-center">
+        <div
+          class="image object-contain max-md:w-[50%] max-md:mx-auto animate-movingY"
+        >
+          <img
+            class="w-[80%] max-md:w-full"
+            src="./img/home-image.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div>
+        <h2 class="uppercase p-4 font-bold text-6xl max-md:text-lg">
+          happy tummy with tasty burgers.
+        </h2>
+        <span
+          class="bg-secondaryColor w-32 h-[2px] block m-5 max-md:mx-auto"
+        ></span>
+        <p
+          class="p-5 text-paragraphColor max-md:px-6 max-md:py-2 max-md:text-[12px]"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+          distinctio, tempora maxime quam voluptatum aspernatur perferendis
+          aliquam assumenda modi. Consequuntur!
+        </p>
+        <div class="icon flex justify-around p-5 gap-6">
+          <div class="flex flex-col items-center">
+            <i class="ri-restaurant-fill text-xl text-secondaryColor"></i>
+            <span>delicious</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <i class="ri-restaurant-fill text-xl text-secondaryColor"></i>
+            <span>delicious</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <i class="ri-restaurant-fill text-xl text-secondaryColor"></i>
+            <span>delicious</span>
+          </div>
+        </div>
+        <div>
+          <button
+            class="capitalize text-blackColor font-normal bg-secondaryColor m-5 px-6 py-4 text-xl rounded-lg"
+          >
+            learn more
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--~~~~~~~~~~~~~~~ category ~~~~~~~~~~~~~~~-->
+    <section>
+      <div
+        class="container py-16 flex gap-4 justify-between md:items-center max-md:flex-col max-md:gap-6 max-md:px-5"
+      >
+        <div
+          class="bg-secondaryColor flex basis-1/3 items-center md:py-3 rounded-lg overflow-hidden max-md:py-1"
+        >
+          <div class="md:basis-1/3 mr-4">
+            <img src="./img/burger-1.png" alt="" class="w-24 max-md:w-20" />
+          </div>
+          <div class="info">
+            <h3 class="text-whiteColor font-bold text-lg md:mb-1">food</h3>
+            <p class="text-whiteColor max-md:text-[14px]">
+              Lorem ipsum dolor sit.
+            </p>
+            <p class="mt-2">buy online</p>
+          </div>
+        </div>
+        <div
+          class="bg-redColor flex basis-1/3 items-center md:py-3 rounded-lg overflow-hidden"
+        >
+          <div class="md:basis-1/3 mr-4">
+            <img src="./img/snack-1.png" alt="" class="w-24 max-md:w-20" />
+          </div>
+          <div class="info">
+            <h3 class="text-whiteColor font-bold text-lg md:mb-1">food</h3>
+            <p class="text-whiteColor">Lorem ipsum dolor sit.</p>
+            <p class="mt-2 text-secondaryColor">buy online</p>
+          </div>
+        </div>
+        <div
+          class="bg-greenColor flex basis-1/3 items-center md:py-3 rounded-lg overflow-hidden"
+        >
+          <div class="md:basis-1/3 mr-4">
+            <img src="./img/burger-1.png" alt="" class="w-24 max-md:w-20" />
+          </div>
+          <div class="info">
+            <h3 class="text-whiteColor font-bold text-lg md:mb-1">food</h3>
+            <p class="text-whiteColor">Lorem ipsum dolor sit.</p>
+            <p class="mt-2 text-secondaryColor">buy online</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--~~~~~~~~~~~~~~~ category ~~~~~~~~~~~~~~~-->
+    <section>
+      <div class="container pb-10">
+        <div
+          class="bg-darkColorLight flex mb-8 items-center py-3 rounded-lg max-md:flex-col"
+        >
+          <div class="p-4">
+            <img src="./img/promo-1.png" alt="" class="w-60 max-md:w-28" />
+          </div>
+          <div
+            class="info flex-1 tracking-wider max-md:flex max-md:flex-col max-md:items-center"
+          >
+            <p class="text-secondaryColor py-2 font-bold mb-1 text-sm">
+              payday
+            </p>
+            <h2 class="text-whiteColor text-[14px]">
+              get a 10% discount on payday week
+            </h2>
+            <p class="mb-1 py-2 text-[#777] text-[10px]">
+              Lorem ipsum dolor sit amet consectetur.
+            </p>
+            <p class="text-secondaryColor text-sm">buy online</p>
+          </div>
+        </div>
+        <div
+          class="bg-darkColorLight flex items-center py-3 rounded-lg max-md:flex-col"
+        >
+          <div class="p-4">
+            <img src="./img/promo-2.png" alt="" class="w-60 max-md:w-28" />
+          </div>
+          <div
+            class="info flex-1 tracking-wider max-md:flex max-md:flex-col max-md:items-center"
+          >
+            <p class="text-secondaryColor font-bold py-2 text-sm">payday</p>
+            <h2 class="text-whiteColor text-[14px] py-2">
+              get a 10% discount on payday week
+            </h2>
+            <p class="mb-1 text-[#777] text-[10px]">
+              Lorem ipsum dolor sit amet consectetur.
+            </p>
+            <p class="text-secondaryColor text-sm">buy online</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--~~~~~~~~~~~~~~~ About ~~~~~~~~~~~~~~~-->
+    <section id="about-us">
+      <div
+        class="container flex gap-8 text-whiteColor overflow-hidden py-16 max-lg:flex-col max-md:bg-darkColorLight px-5"
+      >
+        <div class="basis-1/2">
+          <img src="./img/about.jpg" alt="" class="" />
+        </div>
+        <div class="basis-1/2 text-sm">
+          <h2 class="font-bold text-3xl mb-3">
+            find food and drinks, all-in-one place for your best taste.
+          </h2>
+          <p class="text-sm text-[#777] mb-2">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. In earum
+            dolor vitae, reiciendis, maxime commodi quas quaerat quibusdam aut
+            nemo iste. Reprehenderit minima nisi aperiam repellat, culpa
+            dignissimos recusandae non eaque numquam? Id voluptas, adipisci
+            accusamus deserunt similique voluptatibus cupiditate.
+          </p>
+          <div class="flex gap-40 text-lg mb-1 text-[#777]">
+            <div>
+              <div class="flex">
+                <i class="ri-check-double-line text-secondaryColor mr-2"></i>
+                <p>best price</p>
+              </div>
+              <div class="flex">
+                <i class="ri-check-double-line text-secondaryColor mr-2"></i>
+                <p>best price</p>
+              </div>
+            </div>
+            <div>
+              <div class="flex">
+                <i class="ri-check-double-line text-secondaryColor mr-2"></i>
+                <p>best price</p>
+              </div>
+              <div class="flex">
+                <i class="ri-check-double-line text-secondaryColor mr-2"></i>
+                <p>best price</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <button
+              class="capitalize text-blackColor font-normal bg-secondaryColor m-5 px-10 py-3 text-xl rounded-lg"
+            >
+              About us
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--~~~~~~~~~~~~~~~ menu ~~~~~~~~~~~~~~~-->
+    <section id="menu">
+      <div class="container text-center text-whiteColor py-16 relative">
+        <h2 class="text-5xl pb-10">our best menu</h2>
+        <span
+          class="block w-36 bg-secondaryColor h-[2px] absolute translate-x-1/2 right-1/2"
+        ></span>
+        <p class="my-4 text-[#777] text-xl">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab
+          consectetur quasi vitae?
+        </p>
+        <div class="flex justify-center flex-wrap mb-16">
+          <div class="">
+            <button
+              class="capitalize text-blackColor font-normal bg-secondaryColor m-5 px-10 py-3 text-xl rounded-lg"
+            >
+              all
+            </button>
+          </div>
+          <div class="">
+            <button
+              class="capitalize text-blackColor font-normal bg-secondaryColor m-5 px-10 py-3 text-xl rounded-lg"
+            >
+              food
+            </button>
+          </div>
+          <div class="">
+            <button
+              class="capitalize text-blackColor font-normal bg-secondaryColor m-5 px-10 py-3 text-xl rounded-lg"
+            >
+              snack
+            </button>
+          </div>
+          <div class="basis-full">
+            <button
+              class="capitalize text-blackColor font-normal bg-secondaryColor m-5 px-10 py-3 text-xl rounded-lg"
+            >
+              beverage
+            </button>
+          </div>
+        </div>
+        <div
+          class="boxes grid lg:grid-cols-4 gap-6 max-md:grid-cols-1 md:grid-cols-2"
+        >
+          <div class="box flex flex-col items-center">
+            <div class="bg-darkColorLight rounded-3xl p-10 mb-4 flex">
+              <img src="./img/burger-1.png" alt="" class="w-32" />
+            </div>
+            <div class="info flex flex-col">
+              <h2 class="font-bold text-lg">reguler beef burger</h2>
+              <p class="text-[#777] text-sm mb-2">
+                Lorem ipsum dolor sit amet consectetur, blanditiis.
+              </p>
+              <span class="text-secondaryColor">$4200</span>
+            </div>
+          </div>
+          <div class="box flex flex-col items-center">
+            <div class="bg-darkColorLight rounded-3xl p-10 mb-4 flex">
+              <img src="./img/burger-2.png" alt="" class="w-32" />
+            </div>
+            <div class="info flex flex-col">
+              <h2 class="font-bold text-lg">reguler beef burger</h2>
+              <p class="text-[#777] text-sm mb-2">
+                Lorem ipsum dolor sit amet consectetur, blanditiis.
+              </p>
+              <span class="text-secondaryColor">$4200</span>
+            </div>
+          </div>
+          <div class="box flex flex-col items-center">
+            <div class="bg-darkColorLight rounded-3xl p-10 mb-4 flex">
+              <img src="./img/burger-3.png" alt="" class="w-32" />
+            </div>
+            <div class="info flex flex-col">
+              <h2 class="font-bold text-lg">reguler beef burger</h2>
+              <p class="text-[#777] text-sm mb-2">
+                Lorem ipsum dolor sit amet consectetur, blanditiis.
+              </p>
+              <span class="text-secondaryColor">$300</span>
+            </div>
+          </div>
+          <div class="box flex flex-col items-center">
+            <div class="bg-darkColorLight rounded-3xl p-10 mb-4 flex">
+              <img src="./img/burger-4.png" alt="" class="w-32" />
+            </div>
+            <div class="info flex flex-col">
+              <h2 class="font-bold text-lg">reguler beef burger</h2>
+              <p class="text-[#777] text-sm mb-2">
+                Lorem ipsum dolor sit amet consectetur, blanditiis.
+              </p>
+              <span class="text-secondaryColor">$2500</span>
+            </div>
+          </div>
+          <div class="box flex flex-col items-center">
+            <div class="bg-darkColorLight rounded-3xl p-10 mb-4 flex">
+              <img src="./img/beverage-5.png" alt="" class="w-32" />
+            </div>
+            <div class="info flex flex-col">
+              <h2 class="font-bold text-lg">reguler beef burger</h2>
+              <p class="text-[#777] text-sm mb-2">
+                Lorem ipsum dolor sit amet consectetur, blanditiis.
+              </p>
+              <span class="text-secondaryColor">$400</span>
+            </div>
+          </div>
+          <div class="box flex flex-col items-center">
+            <div class="bg-darkColorLight rounded-3xl p-10 mb-4 flex">
+              <img src="./img/beverage-3.png" alt="" class="w-32" />
+            </div>
+            <div class="info flex flex-col">
+              <h2 class="font-bold text-lg">reguler beef burger</h2>
+              <p class="text-[#777] text-sm mb-2">
+                Lorem ipsum dolor sit amet consectetur, blanditiis.
+              </p>
+              <span class="text-secondaryColor">$400</span>
+            </div>
+          </div>
+          <div class="box flex flex-col items-center">
+            <div class="bg-darkColorLight rounded-3xl p-10 mb-4 flex">
+              <img src="./img/beverage-5.png" alt="" class="w-32" />
+            </div>
+            <div class="info flex flex-col">
+              <h2 class="font-bold text-lg">reguler beef burger</h2>
+              <p class="text-[#777] text-sm mb-2">
+                Lorem ipsum dolor sit amet consectetur, blanditiis.
+              </p>
+              <span class="text-secondaryColor">$200</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--~~~~~~~~~~~~~~~ review ~~~~~~~~~~~~~~~-->
+    <section id="review">
+      <div class="container text-center text-whiteColor py-16 relative">
+        <h2 class="text-5xl pb-10">customer review</h2>
+        <span
+          class="block w-36 bg-secondaryColor h-[2px] absolute translate-x-1/2 right-1/2"
+        ></span>
+        <p class="my-4 text-[#777] text-xl">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab
+          consectetur quasi vitae?
+        </p>
+        <div
+          class="boxes mt-20 grid lg:grid-cols-3 gap-6 max-md:grid-cols-1 md:grid-cols-2"
+        >
+          <div
+            class="bg-darkColorLight p-5 flex flex-col justify-center rounded-3xl"
+          >
+            <p class="text-paragraphColor mb-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A nihil
+              facilis esse iure, mollitia modi quod. Qui molestiae culpa,
+              praesentium facilis assumenda ipsam minus quod magnam, delectus
+            </p>
+            <div class="flex items-center justify-between">
+              <div class="info flex items-center">
+                <div class="m-2">
+                  <img
+                    src="./img/islam.jpg"
+                    alt=""
+                    class="h16 w-16 rounded-full"
+                  />
+                </div>
+                <div>
+                  <h3>islam mohamed</h3>
+                  <p class="text-paragraphColor">developer</p>
+                </div>
+              </div>
+              <i
+                class="ri-double-quotes-r m-2 text-5xl text-secondaryColor"
+              ></i>
+            </div>
+          </div>
+          <div
+            class="bg-darkColorLight p-3 flex flex-col justify-center rounded-3xl"
+          >
+            <p class="text-paragraphColor mb-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A nihil
+              facilis esse iure, mollitia modi quod. Qui molestiae culpa,
+              praesentium facilis assumenda ipsam minus quod magnam, delectus
+            </p>
+            <div class="flex items-center justify-between">
+              <div class="info flex items-center">
+                <div class="m-2">
+                  <img
+                    src="./img/ellen.jpg"
+                    alt=""
+                    class="w-16 h-16 rounded-full object-contain"
+                  />
+                </div>
+                <div>
+                  <h3>Ellen ahmed</h3>
+                  <p class="text-paragraphColor">eng</p>
+                </div>
+              </div>
+              <i
+                class="ri-double-quotes-r m-2 text-5xl text-secondaryColor"
+              ></i>
+            </div>
+          </div>
+          <div
+            class="bg-darkColorLight p-3 flex flex-col justify-center rounded-3xl"
+          >
+            <p class="text-paragraphColor mb-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A nihil
+              facilis esse iure, mollitia modi quod. Qui molestiae culpa,
+              praesentium facilis assumenda ipsam minus quod magnam, delectus
+            </p>
+            <div class="flex items-center justify-between">
+              <div class="info flex items-center">
+                <div class="m-2">
+                  <img
+                    src="./img/karma.jpg"
+                    alt=""
+                    class="h16 w-16 rounded-full"
+                  />
+                </div>
+                <div>
+                  <h3>Karma</h3>
+                  <p class="text-paragraphColor">dr</p>
+                </div>
+              </div>
+              <i
+                class="ri-double-quotes-r m-2 text-5xl text-secondaryColor"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--~~~~~~~~~~~~~~~ contact ~~~~~~~~~~~~~~~-->
+    <section id="contact">
+      <div
+        class="py-16 bg-secondaryColor flex items-center max-md:flex-col max-md:p-8"
+      >
+        <div class="basis-1/2 flex items-center flex-col max-md:mb-3">
+          <h2 class="text-black text-4xl mb-1 max-md:text-2xl">
+            get exclussive update
+          </h2>
+          <p class="text-[#777] text-[14px] basis-1/2 max-md:text-[12px]">
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+          </p>
+        </div>
+        <div class="flex items-center">
+          <div>
+            <input
+              type="email"
+              placeholder="Email adress"
+              class="md:w-72 rounded-lg md:py-3 placeholder:pl-4 max-md:p-2"
+            />
+          </div>
+          <div class="">
+            <button
+              class="capitalize text-white font-normal bg-black ml-7 md:px-6 py-2 md:text-xl rounded-lg max-md:text[12px] max-md:px-2"
+            >
+              <i class="ri-send-plane-fill md:mr-2"></i>
+              subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~-->
+    <section>
+      <div
+        class="container py-16 text-white grid grid-cols-4 gap-4 max-md:grid-cols-2 max-md:gap-8 max-md:mx-auto max-md:px-4"
+      >
+        <div>
+          <h2 class="uppercase text-4xl mb-3">
+            bur<span class="text-secondaryColor">ger</span>
+          </h2>
+          <p class="text-[#777] text-[14px]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
+            vero!
+          </p>
+        </div>
+        <div>
+          <h3 class="font-bold text-xl mb-3">support</h3>
+          <ul class="font-dmsans flex flex-col gap-2">
+            <li>faq</li>
+            <li>privacy policy</li>
+            <li>term & condition</li>
+            <li>contact</li>
+          </ul>
+        </div>
+        <div>
+          <div class="mb-6">
+            <h3 class="font-bold text-xl mb-3">phone</h3>
+            <div class="flex flex-row">
+              <a href="">
+                <i class="ri-phone-line text-secondaryColor text-xl mr-2"></i>
+              </a>
+              <p>+1000 000 0000</p>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-bold text-xl mb-3">Email</h3>
+            <div class="flex flex-row items-center">
+              <a href=""
+                ><i
+                  class="fa-solid fa-envelope text-secondaryColor text-xl mr-2"
+                ></i
+              ></a>
+              <p class="text-sm">burger.info@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="mb-6">
+            <h3 class="font-bold text-xl mb-3">adress</h3>
+            <div class="flex flex-row">
+              <a href="">
+                <i
+                  class="ri-map-pin-2-fill text-secondaryColor text-xl mr-2"
+                ></i>
+              </a>
+              <p>adress goes here</p>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-bold text-xl mb-3">Follow us</h3>
+            <div class="flex flex-row gap-3">
+              <a href="" class="">
+                <i class="ri-facebook-fill text-secondaryColor text-xl"></i>
+              </a>
+              <a href="">
+                <i class="ri-twitter-fill text-secondaryColor text-xl"></i>
+              </a>
+              <a href="">
+                <i class="ri-instagram-line text-secondaryColor text-xl"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  Swiper's js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
