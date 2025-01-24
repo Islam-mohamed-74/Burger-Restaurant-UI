@@ -2271,10 +2271,6 @@ video {
   line-height: 1;
 }
 
-.text-\[10px\]{
-  font-size: 10px;
-}
-
 .text-\[14px\]{
   font-size: 14px;
 }
@@ -2966,12 +2962,20 @@ html{
     justify-content: center;
   }
 
+  .max-md\:gap-10{
+    gap: 2.5rem;
+  }
+
   .max-md\:gap-6{
     gap: 1.5rem;
   }
 
   .max-md\:gap-8{
     gap: 2rem;
+  }
+
+  .max-md\:gap-20{
+    gap: 5rem;
   }
 
   .max-md\:overflow-hidden{
@@ -3057,6 +3061,11 @@ html{
     line-height: 1.25rem;
   }
 
+  .max-md\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
   .group:hover .max-md\:group-hover\:h-60{
     height: 15rem;
   }
@@ -3115,6 +3124,11 @@ html{
   .md\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
