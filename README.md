@@ -1,7 +1,7 @@
 Burger Website
 A responsive restaurant website showcasing a modern UI for a burger menu.
 Technologies
-
+![preview](./image.jpg)
 HTML
 CSS
 Tailwind CSS
